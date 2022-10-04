@@ -34,7 +34,7 @@ export default function Home() {
                   <h1>imanoc</h1>
                 </span>
                 <span className="title02">
-                  <span>I'm a NOC</span>
+                  <span>I&apos;m a NOC</span>
                 </span>
               </h1>
               <span className="title02">
