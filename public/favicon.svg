@@ -1,0 +1,15 @@
+<svg width="1640" height="840" viewBox="0 0 1640 840" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      path {
+        fill: #ffffff; <!-- ダークモード時のカラー -->
+      }
+      line {
+        stroke:#ffffff;
+      }
+    }
+  </style>
+<line x1="513.191" y1="844.423" x2="1126.03" y2="-4.73943" stroke="black" stroke-width="100"/>
+<line x1="985.837" y1="844.423" x2="1598.68" y2="-4.73943" stroke="black" stroke-width="100"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M636.64 103.899L693.927 24.5211L612.839 -34L555.554 45.3749L636.64 103.899ZM615.649 132.984L534.564 74.4598L0 815.162L81.0881 873.683L615.649 132.984Z" fill="black"/>
+</svg>
