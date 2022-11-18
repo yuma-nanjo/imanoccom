@@ -21,7 +21,7 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/">
-                <a>top message</a>
+                <a>message</a>
               </Link>
             </li>
           </ul>
@@ -47,22 +47,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="menu-text">
-          <h3>blog</h3>
-          <ul>
-            <li>
-              <Link href="/">
-                <a>umablog</a>
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/">
-                <a>company blog</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
+      
         <div className="menu-sns">
           <h3>contact</h3>
           <ul>

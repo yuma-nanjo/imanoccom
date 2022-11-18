@@ -3,18 +3,75 @@
 @tailwind utilities;
 @charset "UTF-8"
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,6 +79,22 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  /*上下方向にはみ出した要素ををスクロールさせる*/
+  overflow-y: scroll;
+  /*左右方向にはみ出した要素ををスクロールさせる*/
+  overflow-x: scroll;
+  /*スクロールバー非表示（IE・Edge）*/
+  -ms-overflow-style: none;
+  /*スクロールバー非表示（Firefox）*/
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.service::-webkit-scrollbar {
+  display: none;
 }
 
 @font-face {
@@ -129,7 +202,7 @@ select {
 
 body {
   color: #ffffff;
-  background-color: #121212;
+  background-color: #070707;
 }
 
 body,
@@ -176,7 +249,7 @@ main section {
   padding: 31px 10px 43px;
   border-radius: 20px;
   background-color: #ffffff;
-  color: #121212;
+  color: #070707;
 }
 
 main section.showdown {
@@ -368,7 +441,7 @@ body {
 .hero-placeholder::before,
 .hero-main::before {
   content: "";
-  background-color: #121212;
+  background-color: #070707;
   opacity: 0.8;
   mix-blend-mode: hue;
 }
@@ -503,7 +576,6 @@ body {
 
 /* ヒーロー：タイトルのアニメーション */
 .title01,
-
 .title03 {
   overflow: hidden;
   height: 1.3em;
@@ -631,12 +703,6 @@ body {
   transition: opacity 0.5s;
 }
 
-html.open,
-.open body {
-  height: 100%;
-  overflow: hidden;
-}
-
 .nav-menu a {
   display: block;
   padding: 20px;
@@ -683,5 +749,5 @@ html.open,
 .cat h2 {
   font-size: 64px;
   transform: translateX(-6%);
-  opacity: 0.3; 
+  opacity: 0.3;
 }
